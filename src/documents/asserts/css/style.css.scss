@@ -31,7 +31,7 @@ body{
 	background:url("../img/bg/1.jpg") no-repeat;
 	background-attachment: fixed;
 	background-repeat: repeat-x;
-	background-size:100%;
+	background-size:100% 0;
 	background-position: top center;
 	font-size: 16px;
 	overflow-x: hidden;
@@ -239,3 +239,6 @@ h1{
 	}
 
 }
+
+
+
