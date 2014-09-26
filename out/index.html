@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Welcome! | My Website</title>
+    <meta name="generator" content="DocPad v6.69.1" />
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/asserts/css/style.css" />
+</head>
+<body>
+	<!-- header -->
+	<div class="header_wrap">
+		<header>
+			<a href="" class="logo">
+				DIMPU.ME
+			</a>
+			<nav class="nav">
+				<ul>
+					<li><a href="/about">About</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/pp">Presentations</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+  	<!-- main -->
+  	<div class="main_wrap">
+  		<div class="main">
+	  		<p>Welcome to My Website! Aravind</p>
+	  	</div>
+  	</div>
+  	<div class="meet_me_wrap">
+	  	<div class="meet_me">
+	  		<div class="content">
+	  			<h1>Say <span class="orange">Hellow</span></h1>
+	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, dignissimos, recusandae. Labore cum ipsam aspernatur sint iusto quaerat alias asperiores fugiat, minima minus expedita doloremque officia a, eius iure beatae.<p>
+	  		</div>
+	  		<div class="connect">
+	  			<menu>
+	  				<ul>
+	  					<li><a href="//fb.com/aravindbuddha" class="fb"></a></li>
+	  					<li><a href="//twitter.com/aravindbuddha" class="tw"></a></li>
+	  					<li><a href="//in.linkedin.com/in/aravindbuddha" class="ln"></a></li>
+	  					<li><a href="//github.com/dimpu" class="gh"></a></li>
+	  				</ul>
+	  			</menu>
+	  		</div>
+	  	</div>
+	</div>
+	<div class="foot_wrap">
+			<div class="header">
+				<h2>Let's Talk</h2>
+				 <small>i always love to hear from you</small>
+			</div>
+		<footer class="foot">
+		
+			<form>
+				<input type="text" name="your_name" value="" size="40" aria-required="true" aria-invalid="true" placeholder="Your Name">
+				<input type="email" name="your_email" value="" size="40" aria-required="true" aria-invalid="true" placeholder="Your Name">
+				<textarea name="your_message" cols="40" rows="10" aria-invalid="false" placeholder="Message"></textarea>
+				<button type="submit" value="Send">Send</button>
+			</form>
+		</footer>
+	</div>
+	
+    <script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
+</body>
+</html>
