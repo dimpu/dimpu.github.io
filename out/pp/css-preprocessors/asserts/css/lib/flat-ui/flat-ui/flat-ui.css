@@ -1,0 +1,62 @@
+/*
+Error: File to import not found or unreadable: flat-ui/modules/glyphicons.
+       Load paths:
+         Compass::SpriteImporter
+         F:/xampp/htdocs/learn/github/dimpu.github.io/out/pp/css-preprocessors/asserts/scss
+         C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets
+        on line 4 of F:/xampp/htdocs/learn/github/dimpu.github.io/out/pp/css-preprocessors/asserts/scss/lib/flat-ui/flat-ui/flat-ui.scss
+
+1: // Flat UI main stylesheet that aggregates all modules
+2: 
+3: // Flat-UI-Icons
+4: @import "flat-ui/modules/glyphicons";
+5: 
+6: // Utility mixins for greater good
+7: @import "flat-ui/mixins";
+8: 
+9: @import "flat-ui/modules/scaffolding";
+
+Backtrace:
+F:/xampp/htdocs/learn/github/dimpu.github.io/out/pp/css-preprocessors/asserts/scss/lib/flat-ui/flat-ui/flat-ui.scss:4
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/engine.rb:268:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:329:in `block in watch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.3/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: flat-ui/modules/glyphicons.\A        Load paths:\A          Compass::SpriteImporter\A          F:/xampp/htdocs/learn/github/dimpu.github.io/out/pp/css-preprocessors/asserts/scss\A          C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets\A         on line 4 of F:/xampp/htdocs/learn/github/dimpu.github.io/out/pp/css-preprocessors/asserts/scss/lib/flat-ui/flat-ui/flat-ui.scss\A \A 1: // Flat UI main stylesheet that aggregates all modules\A 2: \A 3: // Flat-UI-Icons\A 4: @import \"flat-ui/modules/glyphicons\";\A 5: \A 6: // Utility mixins for greater good\A 7: @import \"flat-ui/mixins\";\A 8: \A 9: @import \"flat-ui/modules/scaffolding\";"; }
