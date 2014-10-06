@@ -63,18 +63,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../scss/style.scss */
+/* line 5, ../scss/style.scss */
 body {
   font-family: 'Crimson Text', georgia, times, serif;
   font-size: 2em;
   line-height: 1.3;
-  background: #333;
+  background: #000;
   color: #f2f2f2;
   -webkit-user-select: none;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 16, ../scss/style.scss */
+/* line 15, ../scss/style.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -90,11 +90,22 @@ a {
   transition: 0.5s;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
+.media_logo {
+  background: url('../img/media_logo.png?1411283169');
+  background-size: 309px 77px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 77px;
+  width: 309px;
+  display: block;
+}
+
+/* line 34, ../scss/style.scss */
 code {
   font-family: 'Ubuntu Mono', monospace;
 }
-/* line 31, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 code.snippet {
   display: block;
   position: relative;
@@ -102,46 +113,30 @@ code.snippet {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 37, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 code.snippet .disabled {
   opacity: 0.5;
   text-decoration: line-through;
 }
-/* line 41, ../scss/style.scss */
+/* line 46, ../scss/style.scss */
 code.snippet .indent {
   white-space: pre;
 }
-/* line 44, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 code.snippet .comment {
   font-size: 0.8em;
   color: #777;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 56, ../scss/style.scss */
 .step {
   width: 800px;
   padding: 20px;
   border-radius: 20px;
   transition: 1s;
 }
-/* line 56, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 .step h2 {
-  font-size: 2.5em;
-  text-transform: lowercase;
-  margin-bottom: 0.2em;
-  position: relative;
-  padding-left: 40px;
-}
-/* line 62, ../scss/style.scss */
-.step h2:before {
-  content: ">";
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #9b59b6;
-}
-/* line 70, ../scss/style.scss */
-.step h3 {
   font-size: 3.5em;
   text-transform: lowercase;
   color: transparent;
@@ -150,22 +145,28 @@ code.snippet .comment {
   transform-origin: 100% 100%;
   transform: translate(-110%, -120%) rotate(-90deg);
 }
-/* line 80, ../scss/style.scss */
+/* line 70, ../scss/style.scss */
+.step h3 {
+  font-size: 2.5em;
+  text-transform: lowercase;
+  margin-bottom: 0.2em;
+}
+/* line 75, ../scss/style.scss */
 .step ul {
   font-size: 1.2em;
 }
-/* line 82, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 .step ul li {
   margin-bottom: 0.1em;
 }
-/* line 84, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .step ul li:before {
   content: ".";
   text-shadow: 0 0 5px rgba(50, 50, 50, 0.7);
   color: transparent;
   margin-right: 0.5em;
 }
-/* line 91, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .step ul b {
   font-size: 1.1em;
 }
@@ -174,58 +175,65 @@ code.snippet .comment {
  * TITLE STEP
  * =============================================================================
  */
-/* line 103, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 #impress.step-title .step {
   opacity: 0.1;
 }
-/* line 106, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 #impress.step-title .active {
   opacity: 1;
 }
 
 @-moz-keyframes swing {
   0% {
-    -moz-transform: perspective(1000px) rotateY(-30deg);
-    transform: perspective(1000px) rotateY(-30deg);
+    -moz-transform: perspective(1000px) rotateY(-10deg);
+    transform: perspective(1000px) rotateY(-10deg);
   }
   100% {
-    -moz-transform: perspective(1000px) rotateY(30deg);
-    transform: perspective(1000px) rotateY(30deg);
+    -moz-transform: perspective(1000px) rotateY(10deg);
+    transform: perspective(1000px) rotateY(10deg);
   }
 }
 @-webkit-keyframes swing {
   0% {
-    -webkit-transform: perspective(1000px) rotateY(-30deg);
-    transform: perspective(1000px) rotateY(-30deg);
+    -webkit-transform: perspective(1000px) rotateY(-10deg);
+    transform: perspective(1000px) rotateY(-10deg);
   }
   100% {
-    -webkit-transform: perspective(1000px) rotateY(30deg);
-    transform: perspective(1000px) rotateY(30deg);
+    -webkit-transform: perspective(1000px) rotateY(10deg);
+    transform: perspective(1000px) rotateY(10deg);
   }
 }
 @keyframes swing {
   0% {
-    -moz-transform: perspective(1000px) rotateY(-30deg);
-    -webkit-transform: perspective(1000px) rotateY(-30deg);
-    transform: perspective(1000px) rotateY(-30deg);
+    -moz-transform: perspective(1000px) rotateY(-10deg);
+    -webkit-transform: perspective(1000px) rotateY(-10deg);
+    transform: perspective(1000px) rotateY(-10deg);
   }
   100% {
-    -moz-transform: perspective(1000px) rotateY(30deg);
-    -webkit-transform: perspective(1000px) rotateY(30deg);
-    transform: perspective(1000px) rotateY(30deg);
+    -moz-transform: perspective(1000px) rotateY(10deg);
+    -webkit-transform: perspective(1000px) rotateY(10deg);
+    transform: perspective(1000px) rotateY(10deg);
   }
 }
-/* line 129, ../scss/style.scss */
+@keyframes rotate-h1 {
+  0% {
+    transform: perspective(1000px) rotateY(-10deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(10deg);
+  }
+}
+/* line 131, ../scss/style.scss */
 #title h1 {
   font-weight: bold;
   text-align: center;
   font-size: 6em;
   line-height: 1;
-  color: #16a085;
   transform-style: preserve-3d;
-  -moz-animation: swing 20s infinite alternate ease-in-out;
-  -webkit-animation: swing 20s infinite alternate ease-in-out;
-  animation: swing 20s infinite alternate ease-in-out;
+  -moz-animation: swing 2s infinite alternate ease-in-out;
+  -webkit-animation: swing 2s infinite alternate ease-in-out;
+  animation: swing 2s infinite alternate ease-in-out;
   -moz-transform: perspective(1000px) rotateY(0deg);
   -ms-transform: perspective(1000px) rotateY(0deg);
   -webkit-transform: perspective(1000px) rotateY(0deg);
@@ -236,7 +244,7 @@ code.snippet .comment {
   transition: all 2s ease-in-out;
   transform-style: preserve-3d;
 }
-/* line 142, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 #title h1 .short {
   text-transform: lowercase;
   display: inline-block;
@@ -244,19 +252,19 @@ code.snippet .comment {
   font-size: 0.27em;
   transform: translateZ(-50px);
 }
-/* line 149, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 #title h1 .d3 {
   display: inline-block;
   transform: translateZ(20px);
 }
-/* line 153, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 #title h1 .transforms {
   display: inline-block;
   font-weight: normal;
   font-size: 0.6em;
   transform: translateY(-0.6em) translateZ(50px);
 }
-/* line 160, ../scss/style.scss */
+/* line 161, ../scss/style.scss */
 #title .author {
   display: block;
   width: 460px;
@@ -267,7 +275,7 @@ code.snippet .comment {
   opacity: 0;
   transition: opacity 1s;
 }
-/* line 170, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 #title.active .author {
   opacity: 1;
 }
@@ -276,15 +284,15 @@ code.snippet .comment {
  * SUPPORT STEP
  * =============================================================================
  */
-/* line 180, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 #support {
   width: 760px;
 }
-/* line 182, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 #support h2 {
   font-size: 2.5em;
 }
-/* line 185, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 #support .browser {
   width: 240px;
   height: 240px;
@@ -295,14 +303,14 @@ code.snippet .comment {
   position: relative;
   overflow: hidden;
 }
-/* line 195, ../scss/style.scss */
+/* line 196, ../scss/style.scss */
 #support code {
   display: inline-block;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding: 5px;
 }
-/* line 201, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 #support .version {
   font-family: "Ubuntu", sans-serif;
   color: rgba(255, 255, 255, 0.85);
@@ -315,45 +323,45 @@ code.snippet .comment {
   width: 220px;
   text-align: right;
 }
-/* line 213, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 #support .browser:last-child {
   margin-right: 0;
 }
-/* line 216, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 #support .safari {
   background-image: url(../img/safari.png);
 }
-/* line 219, ../scss/style.scss */
+/* line 220, ../scss/style.scss */
 #support .chrome {
   background-image: url(../img/chrome.png);
 }
-/* line 222, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 #support .android {
   background-image: url(../img/android.png);
 }
-/* line 225, ../scss/style.scss */
+/* line 226, ../scss/style.scss */
 #support .firefox {
   background-image: url(../img/firefox.png);
 }
-/* line 228, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 #support .ie {
   background-image: url(../img/ie.png);
 }
-/* line 231, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 #support .opera {
   background-image: url(../img/opera.png);
 }
-/* line 234, ../scss/style.scss */
+/* line 235, ../scss/style.scss */
 #support .future, #support prefix, #support .version {
   opacity: 1;
   transition: opacity 0.5s;
 }
-/* line 238, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 #support .disabled {
   opacity: 0.2;
   cursor: pointer;
 }
-/* line 241, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 #support .disabled .version, #support .disabled .prefix {
   opacity: 0;
 }
@@ -362,7 +370,7 @@ code.snippet .comment {
  * TRANSFORMS SLIDES COMMONS
  * =============================================================================
  */
-/* line 251, ../scss/style.scss */
+/* line 252, ../scss/style.scss */
 .target {
   position: relative;
   width: 200px;
@@ -372,7 +380,7 @@ code.snippet .comment {
   transform-style: preserve-3d;
 }
 
-/* line 260, ../scss/style.scss */
+/* line 261, ../scss/style.scss */
 .face {
   width: 200px;
   height: 200px;
@@ -386,7 +394,7 @@ code.snippet .comment {
   backface-visibility: inherit;
 }
 
-/* line 273, ../scss/style.scss */
+/* line 274, ../scss/style.scss */
 .axis {
   display: block;
   width: 200px;
@@ -399,16 +407,16 @@ code.snippet .comment {
   transform-style: preserve-3d;
   transform: translateZ(1px);
 }
-/* line 284, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .axis.y {
   border-width: 0 0 0 2px;
 }
-/* line 287, ../scss/style.scss */
+/* line 288, ../scss/style.scss */
 .axis.z {
   transform: translateZ(1px) rotateY(-90deg);
   transform-origin: 0 0;
 }
-/* line 291, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 .axis:before {
   position: absolute;
   width: 20px;
@@ -423,11 +431,11 @@ code.snippet .comment {
   font-size: 16px;
   color: #333;
 }
-/* line 305, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .axis.x:before {
   content: "X";
 }
-/* line 308, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 .axis.y:before {
   content: "Y";
   left: -20px;
@@ -435,11 +443,11 @@ code.snippet .comment {
   top: auto;
   right: auto;
 }
-/* line 315, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 .axis.z:before {
   content: "Z";
 }
-/* line 318, ../scss/style.scss */
+/* line 319, ../scss/style.scss */
 .axis:after {
   content: " ";
   position: absolute;
@@ -449,7 +457,7 @@ code.snippet .comment {
   transform: translate3d(0, -1px, -1px) rotateX(90deg);
   transform-origin: 0 0;
 }
-/* line 327, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .axis.y:after {
   border-top: none;
   border-left: 2px dashed #444;
@@ -457,15 +465,15 @@ code.snippet .comment {
   transform-origin: 0 0;
 }
 
-/* line 335, ../scss/style.scss */
+/* line 336, ../scss/style.scss */
 #transforms2d {
   width: 600px;
 }
-/* line 337, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 #transforms2d .face {
   background: #0099ff;
 }
-/* line 340, ../scss/style.scss */
+/* line 341, ../scss/style.scss */
 #transforms2d h2 {
   font-size: 3.5em;
 }
@@ -474,48 +482,48 @@ code.snippet .comment {
  * TRANSFORMS 3D
  * =============================================================================
  */
-/* line 350, ../scss/style.scss */
+/* line 351, ../scss/style.scss */
 #transforms3d {
   width: 940px;
 }
 
-/* line 354, ../scss/style.scss */
+/* line 355, ../scss/style.scss */
 #transforms3d-cube {
   width: 960px;
 }
 
-/* line 358, ../scss/style.scss */
+/* line 359, ../scss/style.scss */
 #transforms3d .snippet, #transforms3d-cube .snippet {
   font-size: 0.9em;
 }
 
-/* line 362, ../scss/style.scss */
+/* line 363, ../scss/style.scss */
 #transforms3d .face {
   background: #6633ff;
 }
 
-/* line 367, ../scss/style.scss */
+/* line 368, ../scss/style.scss */
 #transforms3d-cube .cube {
   transform-style: flat;
   transform: perspective(600px) rotateX(330deg) rotateY(320deg);
 }
-/* line 371, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 #transforms3d-cube .flip {
   position: relative;
   transform: perspective(1000px) rotateX(0deg);
   transform-style: preserve-3d;
   transition: transform 1s ease-in-out;
 }
-/* line 376, ../scss/style.scss */
+/* line 377, ../scss/style.scss */
 #transforms3d-cube .flip.back {
   transform: perspective(1000px) rotateX(180deg);
 }
-/* line 379, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 #transforms3d-cube .flip .snippet {
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
-/* line 383, ../scss/style.scss */
+/* line 384, ../scss/style.scss */
 #transforms3d-cube .flip .back {
   position: absolute;
   top: 0;
@@ -525,53 +533,53 @@ code.snippet .comment {
   transform: rotateX(-180deg);
 }
 
-/* line 395, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 .cube > .face {
   position: absolute;
   opacity: 1;
   transition: all 1s, transform 1s;
 }
-/* line 399, ../scss/style.scss */
+/* line 400, ../scss/style.scss */
 .cube > .face:nth-child(1) {
   transition-delay: 0, 0;
   background: #6633ff;
   transform: rotateY(0deg) translateZ(100px);
 }
-/* line 404, ../scss/style.scss */
+/* line 405, ../scss/style.scss */
 .cube > .face:nth-child(2) {
   transition-delay: 0, 1s;
   background: #ff9900;
   transform: rotateY(180deg) translateZ(100px);
 }
-/* line 409, ../scss/style.scss */
+/* line 410, ../scss/style.scss */
 .cube > .face:nth-child(3) {
   transition-delay: 0, 2s;
   background: red;
   transform: rotateY(-90deg) translateZ(100px);
 }
-/* line 414, ../scss/style.scss */
+/* line 415, ../scss/style.scss */
 .cube > .face:nth-child(4) {
   transition-delay: 0, 3s;
   background: #33ff00;
   transform: rotateY(90deg) translateZ(100px);
 }
-/* line 419, ../scss/style.scss */
+/* line 420, ../scss/style.scss */
 .cube > .face:nth-child(5) {
   transition-delay: 0, 4s;
   background: yellow;
   transform: rotateX(90deg) translateZ(100px);
 }
-/* line 424, ../scss/style.scss */
+/* line 425, ../scss/style.scss */
 .cube > .face:nth-child(6) {
   transition-delay: 0, 5s;
   background: #0099ff;
   transform: rotateX(-90deg) translateZ(100px);
 }
-/* line 430, ../scss/style.scss */
+/* line 431, ../scss/style.scss */
 .cube.flat > .face {
   transform: translate3d(0, 0, 0);
 }
-/* line 433, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 .cube.target {
   width: 204px;
   height: 204px;
@@ -583,21 +591,21 @@ code.snippet .comment {
  * PERSPECTIVE
  * =============================================================================
  */
-/* line 446, ../scss/style.scss */
+/* line 447, ../scss/style.scss */
 .step-perspective #title {
   pointer-events: none;
 }
 
-/* line 450, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 #perspective {
   width: 600px;
   z-index: 100;
 }
-/* line 453, ../scss/style.scss */
+/* line 454, ../scss/style.scss */
 #perspective h2 {
   width: 550px;
 }
-/* line 456, ../scss/style.scss */
+/* line 457, ../scss/style.scss */
 #perspective .scene {
   background-color: #FFF;
   width: 600px;
@@ -614,7 +622,7 @@ code.snippet .comment {
   transform-style: flat;
   transition: perspective 0.5s ease-in-out;
 }
-/* line 472, ../scss/style.scss */
+/* line 473, ../scss/style.scss */
 #perspective .cross {
   width: 10000px;
   height: 10000px;
@@ -623,7 +631,7 @@ code.snippet .comment {
   top: -4800px;
   cursor: move;
 }
-/* line 479, ../scss/style.scss */
+/* line 480, ../scss/style.scss */
 #perspective .cross:before, #perspective .cross:after {
   content: "";
   position: absolute;
@@ -633,30 +641,30 @@ code.snippet .comment {
   bottom: 0;
   left: 0;
 }
-/* line 488, ../scss/style.scss */
+/* line 489, ../scss/style.scss */
 #perspective .cross:before {
   height: 50%;
   border-top-width: 2px;
 }
-/* line 492, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
 #perspective .cross:after {
   width: 50%;
   border-right-width: 2px;
 }
-/* line 497, ../scss/style.scss */
+/* line 498, ../scss/style.scss */
 #perspective .box {
   width: 100px;
   height: 100px;
   transform-style: preserve-3d;
 }
-/* line 502, ../scss/style.scss */
+/* line 503, ../scss/style.scss */
 #perspective .top, #perspective .left, #perspective .right, #perspective .bottom, #perspective .front, #perspective .back {
   box-sizing: border-box;
   width: 100px;
   height: 100px;
   position: absolute;
 }
-/* line 508, ../scss/style.scss */
+/* line 509, ../scss/style.scss */
 #perspective .left:before, #perspective .right:before {
   content: "";
   box-sizing: border-box;
@@ -668,48 +676,48 @@ code.snippet .comment {
   top: 0;
   left: 101px;
 }
-/* line 519, ../scss/style.scss */
+/* line 520, ../scss/style.scss */
 #perspective .left:before {
   left: auto;
   right: 101px;
 }
-/* line 524, ../scss/style.scss */
+/* line 525, ../scss/style.scss */
 #perspective .box .front {
   background: rgba(255, 255, 0, 0.5);
   transform: translateZ(50px);
 }
-/* line 528, ../scss/style.scss */
+/* line 529, ../scss/style.scss */
 #perspective .box .top {
   background: rgba(255, 153, 0, 0.5);
   transform: translate(0px, -50px) rotateX(90deg);
 }
-/* line 532, ../scss/style.scss */
+/* line 533, ../scss/style.scss */
 #perspective .box .right {
   background: rgba(255, 0, 0, 0.5);
   transform: translate(50px, 0px) rotateY(90deg);
 }
-/* line 536, ../scss/style.scss */
+/* line 537, ../scss/style.scss */
 #perspective .box .bottom {
   background: rgba(51, 255, 0, 0.5);
   transform: translate(0px, 50px) rotateX(-90deg);
 }
-/* line 540, ../scss/style.scss */
+/* line 541, ../scss/style.scss */
 #perspective .box .left {
   background: rgba(102, 51, 255, 0.5);
   transform: translate(-50px, 0px) rotateY(-90deg);
 }
-/* line 544, ../scss/style.scss */
+/* line 545, ../scss/style.scss */
 #perspective .box .back {
   background: rgba(0, 153, 255, 0.5);
   transform: translateZ(-50px) rotateY(180deg);
 }
-/* line 548, ../scss/style.scss */
+/* line 549, ../scss/style.scss */
 #perspective .box:nth-child(2) {
   position: absolute;
   top: 50px;
   left: 100px;
 }
-/* line 553, ../scss/style.scss */
+/* line 554, ../scss/style.scss */
 #perspective .box:nth-child(3) {
   position: absolute;
   top: 250px;
@@ -722,32 +730,32 @@ code.snippet .comment {
  * END
  * =============================================================================
  */
-/* line 568, ../scss/style.scss */
+/* line 569, ../scss/style.scss */
 #remember {
   width: 900px;
 }
 
-/* line 572, ../scss/style.scss */
+/* line 573, ../scss/style.scss */
 #demos h3, #learn h3 {
   font-size: 1.6em;
 }
 
-/* line 576, ../scss/style.scss */
+/* line 577, ../scss/style.scss */
 #demos p, #learn p {
   line-height: 1.6;
 }
 
-/* line 580, ../scss/style.scss */
+/* line 581, ../scss/style.scss */
 #demos a, #learn a {
   white-space: nowrap;
 }
 
-/* line 584, ../scss/style.scss */
+/* line 585, ../scss/style.scss */
 #end {
   height: 0;
   width: 0;
 }
-/* line 587, ../scss/style.scss */
+/* line 588, ../scss/style.scss */
 #end .author {
   text-align: center;
   position: absolute;
@@ -760,26 +768,26 @@ code.snippet .comment {
  * SLIDER
  * =============================================================================
  */
-/* line 601, ../scss/style.scss */
+/* line 602, ../scss/style.scss */
 .switch {
   cursor: pointer;
 }
 
-/* line 606, ../scss/style.scss */
+/* line 607, ../scss/style.scss */
 label.slider {
   display: inline-block;
   position: relative;
   user-select: none;
 }
-/* line 610, ../scss/style.scss */
+/* line 611, ../scss/style.scss */
 label.slider .val {
   white-space: pre;
 }
-/* line 614, ../scss/style.scss */
+/* line 615, ../scss/style.scss */
 label.disabled input {
   display: none;
 }
-/* line 617, ../scss/style.scss */
+/* line 618, ../scss/style.scss */
 label.slider input[type=range] {
   appearance: none;
   background: transparent;
@@ -790,7 +798,7 @@ label.slider input[type=range] {
   left: 0;
   overflow: hidden;
 }
-/* line 626, ../scss/style.scss */
+/* line 627, ../scss/style.scss */
 label.slider input[type=range]::-webkit-slider-thumb {
   appearance: none;
   width: 50px;
@@ -802,7 +810,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
 }
 
 /* IMPRESS NOT SUPPORTED STYLES */
-/* line 640, ../scss/style.scss */
+/* line 641, ../scss/style.scss */
 .impress-not-supported .step {
   clear: both;
   position: relative;
@@ -810,7 +818,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
   margin: 20px auto;
 }
 
-/* line 647, ../scss/style.scss */
+/* line 648, ../scss/style.scss */
 .fallback-message {
   font-size: 16px;
   font-family: sans-serif;
@@ -827,17 +835,17 @@ label.slider input[type=range]::-webkit-slider-thumb {
   left: 50%;
   margin-left: -400px;
 }
-/* line 662, ../scss/style.scss */
+/* line 663, ../scss/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 667, ../scss/style.scss */
+/* line 668, ../scss/style.scss */
 .supported .fallback-message {
   display: none;
 }
 
-/* line 671, ../scss/style.scss */
+/* line 672, ../scss/style.scss */
 .impress-not-supported .fallback-message {
   position: static;
   margin: 20px auto;

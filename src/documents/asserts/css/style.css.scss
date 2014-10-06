@@ -41,6 +41,11 @@ body{
 a{
 	text-decoration: none;
 	color:#000;
+	&:hover{
+		@include scale(2,2); 	
+		// @include rotate(45deg);
+		@include single-transition(all, 1s, ease, 0s);
+	}
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Source Sans Pro', sans-serif;

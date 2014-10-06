@@ -21,8 +21,14 @@ a {
   @include border-radius(0.2em);
   @include transition(0.5s);
 }
-.logo{
-  
+.media_logo{
+  background: image-url("media_logo.png");
+  background-size: image-width("media_logo.png") image-height("media_logo.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: image-height("media_logo.png");
+  width: image-width("media_logo.png");
+  display: inline-block;
 }
 
 code {

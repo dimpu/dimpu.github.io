@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>CSS Preprocessors - a deep dive into concept - by Aravind Buddha</title>
+    <title>CSS 3 Animations - a amazing web concept - by Aravind Buddha</title>
     <script>
         (function(d,ua){
             if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
@@ -22,6 +22,7 @@
 </div>
 
 <div id="impress">
+
 <div id="title" class="step">
     <h1>
         <span class="short">A very short introduction to</span>
@@ -33,28 +34,158 @@
         <span class="name">Aravind Buddha</span> <a href="http://twitter.com/aravindbuddha">@aravindbuddha</a>
         <a class="techumber" href="http://techumber.com">Techumber.com</a>
     </span>
+
 </div>
-<div id="aboutme" class="step" data-x="-940" data-y="0" data-rotate="30" data-scale="0.4">
+<div id="about_me" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
     <h2>Aravind Buddha</h2>
     <ul>
-        <li>Front End Engineer at <a href="//mediaus.com" class="media_us">mediaus.com</a> </li>
+        <li>Front End Engineer at <a href="media_us" class="media_logo"></a> </li>
         <li>I do html</li>
         <li>I do css</li>
         <li>I do js</li>
-        <li>I do php</li>
-        <li>I do perl</li>
+        <li>I do php &amp; perl</li>
+        <li>I'm at @aravindbuddha and I blog on techumber.com</li>
     </ul>
 </div>
-<div id="about_media" class="step" data-x="-640" data-y="0" data-rotate="30" data-scale="0.4">
-    <h2>Aravind Buddha</h2>
+<div id="talk_about" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+    <h2>I'ill Talk about</h2>
+    <ul>
+        <li>CSS Weaknesses</li>
+        <li>Why Preprocessors?</li>
+        <li>Sass,less or Stylus?</li>
+        <li>Why Sass?</li>
+        <li>Preprocessors features</li>
+        <li>Workflow and Techniques</li>
+        <li>Common FAQ</li>
+        <li>SASS + OOCSS</li>
+    </ul>
+</div>
+<div id="css_weakness" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+    <h2>CSS weaknesses</h2>
+    <ul>
+        <li>It's a declarative language</li>
+        <li>No Programmability</li>
+        <li>Hard to maintain(No proper code organization)</li>
+        <li>Not DRY enough- leads to mistakes</li>
+    </ul>
+</div>
+<div id="css_weakness-css_varibales" class="step css_varibales" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+    <h2>CSS variables?</h2>
+    <p>CSS variables really does exits but they are not stabilized only works in Firefox</p>
+    screenshot
+
+    <h3>Basic Usage</h3>
+    <pre>
+        element {
+          --main-bg-color: brown;
+        }
+    </pre>
+    <pre>
+        element {
+          background-color: var(--main-bg-color);
+        }
+    </pre>
+</div>
+<div id="css_weakness-code_org" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+    <h2>Code organization</h2>
+    <p>Having multiple files need maintainability</p>
+    <p>One way is that we can use <i>@import</i> but it is too bad since it will make multiple http requests.</p>
+    <p>Or concatenate all css files using some build tools </p>
+
+    <h3>Basic Usage</h3>
+    <pre>
+        element {
+          --main-bg-color: brown;
+        }
+    </pre>
+    <pre>
+        element {
+          background-color: var(--main-bg-color);
+        }
+    </pre>
+</div>
+<div id="css_preprocessors" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+    <h2>We have 3 populer css preprocessors</h2>
+    <ul>
+        <ol>SASS</ol>
+        <ol>LESS</ol>
+        <ol>Stylus</ol>
+    </ul>
+</div>
+<div  id="why_sass" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+    <ul>
+        <li>SASS,LESS OR STYLUS all have same features.</li> 
+        <li>SASS is fater because it has cacheing.</li>       
+        <li>Twitter Bootstrap is also available in SASS</li>
+        <li>A very big Cummunity for SASS(very important for any opensource)</li>
+        <li>Many framewors available for sass(ex: bourbon).</li>
+    </ul>
+
+</div>
+
+
+<div  id="css_preprocessors" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+   <h1 class="main_title">Preprocessors features</h1>
+</div>
+
+
+<div  id="Variables" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+   <h1>Variables</h1>
+   <p>Actually constants</p>
+   <pre>
+        $_black: #000;
+        $img_path:"../img";
+        $base_color:$_black;
+        h1{
+            color: $base_color;
+        }
+   </pre>
+</div>
+
+<div  id="bodmas" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+   <h1>Basic operations</h1>
+   <pre>
+       width: 25px *4 + 100px /2 -50px; //=100px
+   </pre>
+</div>
+
+<div  id="color_functions" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+   <h1>Color functions</h1>
+   <pre>
+       $black:#000;
+       $gray:ligten($black,20%);
+       $flashy_black:saturate($black,50%);
+   </pre>
+</div>
+
+<div id="nesting" class="step" data-x="-1040" data-y="0" data-rotate="30" data-scale="0.4">
+   <h1>NESTING</h1>
+   <pre>
+       a.link{
+            &:hover{
+
+        }
+    }
+    //OUTPUT
+
+    a.link {}
+    a.link:hover {}
+    
+   </pre>
+</div>
+
+
+<!-- <div id="about_media" class="step" data-x="-640" data-y="0" data-rotate="30" data-scale="0.4">
+    <h2>Media Systems</h2>
     <ul>
         <li>Front End Engineer at <a href="media_us" class="media_us"></a> </li>
         <li>I do html</li>
         <li>I do css</li>
         <li>I do js</li>
         <li>I do php</li>
+
     </ul>
-</div>
+</div> -->
 
 
 
@@ -72,7 +203,7 @@
     </div>
 </div> -->
 
-<div id="transforms2d" class="step" data-x="-620" data-y="500" data-rotate="90" data-scale="0.5">
+<!-- <div id="transforms2d" class="step" data-x="-620" data-y="500" data-rotate="90" data-scale="0.5">
     <h2>2D transforms</h2>
     
     <div class="face target">
@@ -338,7 +469,7 @@
         <span class="name">Bartek Szopka</span> <a href="http://twitter.com/bartaz">@bartaz</a>
         <a class="techumber" href="http://techumber.com"><img src="img/techumber.png" width="200" /></a>
     </span>
-</div>
+</div> -->
 
 </div>
 
