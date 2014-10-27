@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Asynchronous JavaScript - Techumber</title>
+		<meta name="description" content="Asynchronous JavaScript explaind by aravind buddha- Techumber">
+		<meta name="author" content="Aravind Buddha">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/monokai_sublime.css">
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Asynchronous JavaScript</h1>
+					<!-- <h3>HTML Presentations Made Easy</h3> -->
+					<p>
+						<small>Created by <a href="http://techumber.com">aravind buddha</a> / <a href="http://twitter.com/aravindbuddha">@aravindbuddha</a></small>
+					</p>
+					<p>
+						<small>Follow me at <a href="http://techumber.com">techumber.com</a> 
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>I'm Dimpu Aravind Buddha</h2>
+					<ul>
+						<li>I work for <a href="mediaus.com">Media Systems</a></li>
+						<li>I do HTML</li>
+						<li>I do CSS</li>
+						<li>I do JavaScript</li>
+						<li>I do php,perl,node.js</li>
+					</ul>
+				</section>
+				<section>
+					<h2>What we gonna see?</h2>
+					<ul>
+						<li>Understanding JavaScript</li>
+						<li>JavaScript call Stack</li>
+						<li>Understanding Events</li>
+						<li>Meet the Queue</li>
+						<li>Serial vs Parallel</li>
+						<li>The Event Loop</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Understanding JavaScript</h2>
+				</section>
+				<section>
+					<h2>What are you?</h2>
+					<img src="img/jackie.jpg" alt="">
+				</section>
+				<section>
+					<p>A simple</p>
+					<ul>
+						<li>Single threaded </li>
+						<li>Non-blocking</li>
+						<li>Asynchronous</li>
+						<li>Concurrent</li>
+						<li>Runtime</li>
+					</ul>
+				</section>
+				<section>
+					<h2>How do you work?</h2>
+					<img src="img/column_dog-picture-photo-silly-pug-face.jpg" alt="column_dog-picture-photo-silly-pug-face">
+				</section>
+				<section>
+					<p>I have</p>
+					<ul>
+						<li>Call Stack</li>
+						<li>a Heap</li>
+						<li>An Event Loop</li>
+						<li>a callback queue</li>
+						<li>some other apis</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Stacks?</h2>
+					<img src="img/stack.jpg" alt="stacks">
+				</section>
+				<section>
+					<p>Stacks are basic data strictures. JavaScript use it at runtime.</p>
+					<pre>
+						<code class="hljs javascript"  data-trim >
+//timerloop.js
+function msg(str){
+	console.log(str)
+}
+function foo(msg){
+	msg(msg)
+}
+function bar(){
+	foo("im bar");
+}
+bar();
+
+						</code>
+					</pre>
+
+				</section>
+
+
+				<section>
+					<h2>Understanding Events</h2>
+				</section>
+				<section>
+					<!-- <h2></h2> -->
+					<p>setTimeout is async function</p>
+					<pre>
+						<code class="hljs javascript"  data-trim >
+//timerloop.js
+for (var i = 1; i <= 10; i++) {
+	setTimeout(function(){ document.write(i); }, 0); //expect 1 2 3 ...
+};
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Why?</h2>
+					<ol>
+						<li>There’s only one variable named i, scoped by the declaration var i </li>
+						<li>After the loop, i === 4, having been incremented until it failed the condition i <= 3</li>
+						<li>JavaScript event handlers don’t run until the thread is free.</li>
+					</ol>
+				</section>
+
+
+				<section>
+					<p>One more with perfect time value</p>
+					<pre>
+						<code class="hljs javascript"  data-trim >
+//timer loop  
+var start = new Date;
+setTimeout(function(){
+var end = new Date;
+document.write('Time elapsed:', end - start, 'ms');
+}, 500);
+while (new Date - start < 1000) {};
+						</code>
+					</pre>
+				</section>
+
+<section>
+	<h2>Meet the Queue</h2>
+	<img src="img/dog-queue.jpg" alt="">
+</section>
+
+<section>
+	<h2>Why Queue?</h2>
+	<ul>
+		<li>JavaScript is a single thred.</li>
+		<li>It will stores the event handler function in Queues</li>
+		<li>When event is eligible it will be fired if the thread is free</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Serial vs Parallel code</h2>
+	<img src="img/Baby-face-shocked.jpg" alt="Baby-face-shocked.jpg" />
+</section>
+
+<section>
+	<p>code blocking</p>	
+	<pre>
+	<code class="hljs javascript"  data-trim >
+for(var i=1; i < 100; i++){
+	var result=db.query("SELECT * FROM users WHERE id= ?",i);
+	console.log(result);
+};
+	</code>
+	</pre>
+
+</section>
+<section>
+	<p>non-blocking</p>	
+	<pre>
+	<code class="hljs javascript"  data-trim >
+function queryHandle(res){
+	console.log(res)
+}
+for(var i=1; i < 100; i++){
+	db.query("SELECT * FROM users WHERE id="+i,queryHandle);
+};
+	</code>
+	</pre>
+</section>
+
+<section>
+	<h2>The Event Loop </h2>
+	<img src="img/GIF-Human-Loop-the-Loop-with-Damien-Walters.gif" alt="GIF-Human-Loop-the-Loop-with-Damien-Walters.gif">
+</section>
+
+<section>
+	<h2>What does it do?</h2>
+	<ul>
+		<li>Event loop engine is responsible for watch over all event in environment.</li>
+		<li>It will look for two things events and there call back.</li>
+		<li>When an event occors it will fire the corresponding callback.</li>
+		<li>We remove any event any time.</li>
+	</ul>
+</section>
+
+</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// // Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
