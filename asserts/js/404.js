@@ -23,8 +23,8 @@
  */
 (function () {
 
-  var DISPLAY_WIDTH = 960,
-    DISPLAY_HEIGHT = 480,
+  var DISPLAY_WIDTH = window.innerWidth,
+    DISPLAY_HEIGHT = window.innerHeight,
     DISPLAY_DURATION = 10,
     OVERLAY_DURATION = 3;
 
@@ -57,8 +57,10 @@
       }, false);
 
       eyes = [
-        new Eye(canvas, 0.50, 0.50, 5.00, 0.10),
-
+        // new Eye(canvas, 0.20, 0.50, 5.00, 0.10),
+        // new Eye(canvas, 0.80, 0.50, 5.00, 0.10),
+        
+         new Eye(canvas, 0.50, 0.50, 5.00, 0.10),
         new Eye(canvas, 0.19, 0.80, 0.88, 0.31),
         new Eye(canvas, 0.10, 0.54, 0.84, 0.32),
         new Eye(canvas, 0.81, 0.13, 0.63, 0.33),
@@ -77,6 +79,7 @@
         new Eye(canvas, 0.13, 0.24, 0.85, 0.47),
         new Eye(canvas, 0.58, 0.20, 0.77, 0.48),
         new Eye(canvas, 0.55, 0.84, 0.87, 0.50),
+        new Eye(canvas, 0.69, 0.89, 0.87, 0.50),
       ];
 
       startTime = Date.now();
@@ -109,17 +112,17 @@
     if (seconds > OVERLAY_DURATION && overlay !== undefined) {
 
       // Ease-in
-      overlayOpacity *= 0.94 + (0.055 * overlayOpacity);
-      overlayOpacity = Math.max(overlayOpacity - 0.01, 0);
+      // overlayOpacity *= 0.94 + (0.055 * overlayOpacity);
+      // overlayOpacity = Math.max(overlayOpacity - 0.01, 0);
 
-      overlay.style.opacity = overlayOpacity;
+      // overlay.style.opacity = overlayOpacity;
 
       if (overlayOpacity === 0) {
         // We have no more use for the overlay, removing it ensures
         // that we do not repeatedly enter this if statement
-        container.removeChild(overlay);
+        // container.removeChild(overlay);
 
-        overlay = undefined;
+        // overlay = undefined;
       }
     }
 
