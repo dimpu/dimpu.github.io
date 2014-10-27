@@ -65,7 +65,7 @@
         new Eye(canvas, 0.10, 0.54, 0.84, 0.32),
         new Eye(canvas, 0.81, 0.13, 0.63, 0.33),
         new Eye(canvas, 0.89, 0.19, 0.58, 0.34),
-        new Eye(canvas, 0.40, 0.08, 0.97, 0.35),
+        new Eye(canvas, 0.40, 0.18, 0.97, 0.35),
         new Eye(canvas, 0.64, 0.74, 0.57, 0.36),
         new Eye(canvas, 0.41, 0.89, 0.56, 0.37),
         new Eye(canvas, 0.92, 0.89, 0.75, 0.38),
@@ -96,6 +96,10 @@
 
     // Out with the old ...
     context.clearRect(0, 0, DISPLAY_WIDTH, DISPLAY_HEIGHT);
+
+    context.font="100px Georgia";
+    // context.textAlign="center"; 
+    context.fillText("What are you looking for?",(DISPLAY_WIDTH/50)+200,90);
 
     // ... in with the new
     for (var i = 0, len = eyes.length; i < len; i++) {
@@ -330,4 +334,13 @@ window.requestAnimFrame = (function () {
     function ( /* function */ callback, /* DOMElement */ element) {
       window.setTimeout(callback, 1000 / 60);
   };
+
+
+
+  var canvas= $('canvas');
+  canvas.width(DISPLAY_WIDTH);
+  canvas.height(DISPLAY_HEIGHT);
+  canvas.css('width',DISPLAY_WIDTH);
+  canvas.css('height',DISPLAY_HEIGHT);
+  
 })();
