@@ -136,8 +136,10 @@ bar();
 					<pre>
 						<code class="hljs javascript"  data-trim >
 //timerloop.js
-for (var i = 1; i <= 10; i++) {
-	setTimeout(function(){ document.write(i); }, 0); //expect 1 2 3 ...
+for (var i = 1; i < 9; i++) {
+	setTimeout(function(){ 
+	document.write(i +"<br>"); //expect 1 2 3 ...
+	}, 0); 
 };
 						</code>
 					</pre>
