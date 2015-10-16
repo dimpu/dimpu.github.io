@@ -1,0 +1,5 @@
+192.168.10.1 - - [16/Oct/2015:08:24:02 +0200] "GET / HTTP/1.1" 200 1415 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+192.168.10.1 - - [16/Oct/2015:08:24:02 +0200] "GET /img/logo.png HTTP/1.1" 404 293 "http://dimpu.github.local/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+192.168.10.1 - - [16/Oct/2015:08:24:02 +0200] "GET /js/main.js HTTP/1.1" 404 291 "http://dimpu.github.local/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+192.168.10.1 - - [16/Oct/2015:08:24:02 +0200] "GET /css/index.css HTTP/1.1" 200 - "http://dimpu.github.local/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+192.168.10.1 - - [16/Oct/2015:08:24:16 +0200] "GET /favicon.ico HTTP/1.1" 404 292 "http://dimpu.github.local/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"

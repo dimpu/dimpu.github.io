@@ -1,240 +1,397 @@
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <title>Dimpu Aravind's Résumé</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Dimpu</title>
+    <!-- Google fonts -->
+    <link href='//fonts.googleapis.com/css?family=Pacifico|Raleway:100,200,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="//bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="./css/index.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+  <body>
+    <header class="full-width p-t-lg p-b-lg" id="hero">
+      <h1 class="header-title" data-hover="Dimpu&nbsp;Aravind">
+        Dimpu Aravind
+      </h1>
+      <div class="logo-container m-t-sm box-md block-center">
+        <div class="logo round box-md bg-lighter text-center text-center-v">
+          DA
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-        <!-- Le styles -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="assets/css/docs.css" rel="stylesheet">
-        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-        <link rel="shortcut icon" href="/favicon.png">
-        <style>
-            .langs  > h1 {
-                color: yellow;
-            }
-            .langs > p{
-                color: white;
-            }           
-            .nav-list > .active > a{
-                background-color: transparent;
-                color: black;
-            }
-          </style>
+      </div>
 
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="assets/js/html5shiv.js"></script>
-        <![endif]-->
-      </head>
-<!--
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav no-float block-center">
+          <li>
+            <a href="#intro">Intro</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
 
-||        ||  ||=========    ||             ||              ================
-||        ||  ||             ||             ||              ||            ||
-||        ||  ||             ||             ||              ||            ||
-||========||  ||=========    ||             ||              ||            ||
-||        ||  ||             ||             ||              ||            ||
-||        ||  ||             ||             ||              ||            ||
-||        ||  ||=========    ||========     ||========      ||============||
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
 
-If you're wondering, "how the FUCK did this noob douchbag manage to code this UI? >_<" , you should be happy to know that I didn't. This is an open-source bootstrap theme. 
-Search for, "BOOTSTRA.386" :) 
-Download > Tweak > Use. 
-Thank me later, or just now. pls *puppy eyes*. k ;_; 
+    <section class="p-t-lg p-b-lg full-width container" id="intro">
+      <a id="intro-link"></a>
+      <div class="row">
+        <div class="col-md-6 intro-left">
+          <div class="hey">Hey!</div>
+          <br>
 
--->
-
-      <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-        <!-- Navbar
-        ================================================== -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
-          <div class="navbar-inner">
-            <div class="container">
-              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              </button>
-              <a class="brand" href="index.html">Dimpu Aravind's Résumé</a>
-              <div class="nav-collapse collapse">
-                <ul class="nav">
-                  <li class="active">
-                    <a href="index.html">/</a>
-                  </li>
-<!--
-                  <li class="">
-                    <a href="blog.html">/blog</a>
-                  </li>              
--->
-                </ul>
-              </div>
-            </div>
+          <div>Nice to see you there!</div>
+          <br>
+          <div>
+            I'm a web developer.<br>
+            I love to write code. I learn new things.<br>
+            I think, search and dream.
           </div>
         </div>
-    <div class="jumbotron masthead">
+        <div class="col-md-6 intro-right">
+          <div id="picture-me"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="who-am-i">
+          <a class="btn btn-primary" href="//github.com/dimpu">
+            <span class="glyphicon glyphicon-heart-empty"></span>
+            Web lover</a>
+
+            <a class="btn btn-primary" href="//techumber.com">
+              <span class="glyphicon glyphicon-pencil"></span>
+              Tech blogger</a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p-t-lg p-b-lg full-width" id="projects">
       <div class="container">
-        <h1>Dimpu Aravind's Résumé</h1>    
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>  
+
+        <a id="projects-link"></a>
+        <div class="row">
+          <h2 class="text-center section-title light" data-hover="Projects">Projects</h2>
+
+          <ul class="pos-r" id="project-list">
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+
+
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+              <figure class="pos-r">
+                <div id="distance">
+                  Soon
+                </div>
+                <figcaption class="pos-a">
+                  <h3>Soon</h3>
+                  <div>This is a Soon text</div>
+                  <a href="//github.com/dimpu/commingson">Open</a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="see see-github text-center">
+            <a class="btn btn-primary" href="//github.com/dimpu" >View all projects</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row" style="margin-left:10px;">
-      <div class="span3 bs-docs-sidebar">    
-        <ul class="nav nav-list bs-docs-sidenav">
-          <li><img style="filter: contrast(150%);margin-left:auto;margin-right:auto;" src="https://s.gravatar.com/avatar/6fd0769730d25968235dfff9174d5e75?s=300&20150524" /></li>
-          <li><h2 style="color: black;">Dimpu Aravind Buddha</h2></li>
-          <li><h2 style="color: black;">8th June, 1990</h2></li>
-        </ul>
-        <br>
-        <ul class="nav nav-list bs-docs-sidenav">
-          <li><h2 style='font-size:22px;'>Navigation</h2></li>
-          <li><a href="#about"><i class="icon-chevron-right"></i>About</a></li>
-          <li><a href="#lang"><i class="icon-chevron-right"></i>Language</a></li>
-          <li><a href="#sts"><i class="icon-chevron-right"></i>Software/Tool/Server</a></li>
-          <li><a href="#xp"><i class="icon-chevron-right"></i>Experience</a></li>
-          <li><a href="#projects"><i class="icon-chevron-right"></i>Projects</a></li>
-          <li><a href="#edu"><i class="icon-chevron-right"></i>Education</a></li>      
-        </ul>
-        <br>
-        <ul class="nav nav-list bs-docs-sidenav">
-          <li><h2 style='font-size:22px;'>Stalk me</h2></li>
-          <li><a href="mailto:buddhaaravind@gmail..com"><i class="icon-chevron-right"></i>Email</a></li>
-          <li><a href="//www.fb.com/aravindbuddha"><i class="icon-chevron-right"></i>Facebook</a></li>
-          <li><a href="//www.hackerearth.com/users/aravindbuddha"><i class="icon-chevron-right"></i>HackerEarth</a></li>
-          <li><a href="//twitter.com/aravindbuddha"><i class="icon-chevron-right"></i>Twitter</a></li>
-          <li><a href="//www.quora.com/Aravind-Buddha"><i class="icon-chevron-right"></i>Quora</a></li>
-          <li><a href="//github.com/dimpu"><i class="icon-chevron-right"></i>Github</a></li>
-        </ul>
-      </div>
-      <div class="span9" id="blog_list">
-        <div class="page-header" id="about"><h2>About</h2></div>
-        <blockquote>      
-          <p>HI! This is Dimpu Aravind Buddha, living in a world filled with extraordinarily geeky ideas.
-    When I am not busy being lazy, I am trying to share my knowledge through my blog <a href="http://www.techumber.com">techumber.com</a> where you can find various web technology related tutorials and I’m working different open source project to learn as well as give back something to world .
-    I can befuddle you brain with codes and logic and you might remain mentally warped for eternity. 
-    Thanks.
-</p>
-        </blockquote>
-        <div class="page-header" id="lang"><h2>Languages</h2></div>
-        <blockquote class="langs">      
-            <h1>Programming Languages</h1><br>
-    <p style="white-space: pre;">          C           |===================>                         |
-          Perl        |==================================>          |      
-          PHP      |=========================================>   |          
-            </p>
-            <h1>Web > Client-end</h1><br>
-    <p style="white-space: pre;">          
-          HTML5       |===========================================> |          
-          CSS         |==========================================>  |                
-          Javascript  |===========================================> |
-          jquery      |======================================>      |          
-          AJAX        |======================================>      |
-          Angular     |===========================================> |
-          ExtJs     |===========================================> |
-          Bootstrap |===========================================> |
-          Semantic UI |===========================================> |
-          
-            </p>
-            <h1>Web > Server-side</h1><br>
-    <p style="white-space: pre;">          PHP         |==========================================>  |
-          Node.js     |======================================>      |                
-            </p>
-            <h1>Databases</h1><br>
-    <p style="white-space: pre;">          Mysql       |================================>            |
-          MongoDB     |=========================================>   |                
-            </p>
-            <h1>Frameworks</h1><br>
-    <p style="white-space: pre;">          Laraval |======================================>      |
-          Express     |===================================>         |
-          
-            </p>
-          </blockquote>
-          <div class="page-header" id="sts"><h2>Software/Tool/Server</h2></div>
-          <blockquote>
-              <ul>
-                  <li>Vim</li>
-                  <li>Brackets.io</li>
-                  <li>Sublime Text</li>
-                  <li>xampp Server</li>
-                  <li>FileZilla</li>
-                  <li>Openshift</li>
-                  <li>Apt-get based linux distro</li>
-                  <li>Yum based linux distro</li>
-              </ul>
-          </blockquote>
-          <div class="page-header" id="xp"><h2>Experience</h2></div>
-          <blockquote>
-              <ul>
-                  <li>
-                      <h2>Media Systems PVT LTD</h2>
-                      <h1>Joined: 2nd Sep, 2013</h1>
-                      <h1>Still working</h1>
-                      <h1>Role: Consultant End to End development.</h1>
-                      <h1>Languages: HTML5, CSS3, Javascript,Jquery, Bootstrap3, PHP,Laraval and MSSQL </h1>
-                  </li>
-                  <br><br><br>
-                  <li>
-                      <h2>Inwiter  Pvt. Ltd.</h2>
-                      <h1>Joined: 1th April, 2013</h1>
-                      <h1>Role: Wireframes designing. Implementing Jquery Pluing components. Creating custom html5 video player</h1>
-                      <h1>Languages: HTML5,CSS3 and Jquery</h1>
-                  </li>                  
-              </ul>
-          </blockquote>
-          <div class="page-header" id="projects"><h2>Projects</h2></div>
-          <blockquote>
-              <h1><a href="//techumber.com">Techumber</a></h1><br>
-    <p style="white-space: pre;">A web development tutorial blog.
-Languages: HTML,CSS,Javascript, PHP
-              </p>              
-                            
-          </blockquote>
-          
-          
-          <div class="page-header" id="edu"><h2>Education</h2></div>
-          <blockquote>
-              <h1>MCA</h1><br>
-    <p style="white-space: pre;">Year of passing: 2013
-Percentage: 79%
-Specialization: Science + Computer
-              </p>              
-              <h1>B.sc(+3)</h1><br>
-    <p style="white-space: pre;">Year of passing: 2010
-Percentage: 71%
-Specialization: Computer Scienc
-              </p>              
-          </blockquote>
-      </div>
-    </div>
+    <section class="p-t-lg p-b-lg text-center full-width" id="skills">
+      <div class="container">
 
 
+        <a id="skills-link"></a>
+        <div class="row">
+          <h3 class="text-center section-title" data-hover="skills">Skills</h3>
+          <hr class="clear">
+          <ul class="skill-main-list">
+            <li>
+              <img src="img/angular.png" alt="Angular.js">
+              Angular.js
+            </li>
+            <li>
+              <img src="img/node.png" alt="Node.js">
+              Node.js
+            </li>
+            <li>
+              <img src="img/laravel.png" alt="Laravel">
+              Laravel
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-4 intro-left">
+            <ul class="skill-list left">
+              <li>
+                Javascript
+              </li>
+              <li>
+                HTML5
+              </li>
+              <li>
+                SCSS
+              </li>
+              <li>
+                Atom.IO
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 intro-right">
+          <ul class="skill-list center">
+            <li>
+              PHP
+            </li>
+            <li>
+              CSS3
+            </li>
+            <li>
+              Laravel
+            </li>
+            <li>
+              DHTML
+            </li>
+          </ul>
+          </div>
+          <div class="col-md-4 intro-right">
+            <ul class="skill-list right">
+              <li>
+                SQL
+              </li>
+              <li>
+                jQuery
+              </li>
+              <li>
+                FireBase
+              </li>
+              <li>
+                REST
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          and more...
+        </div>
+        <div class="row m-t-sm work-information">
+          I'm currently working at <a href="http://msisoft.in" class="work">MSI Soft</a> as a Web developer.<br>
+          Want to know more about me?<br><br>
+          <div class="see see-resume">
+            <a target="_blank" href="http://linkedin.com/in/aravindbuddha">See my resume</a>
+          </div>
+        </div>
+        </div>
+      </section>
 
-        <!-- Le javascript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster, lol wut? -->
-        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/bootstrap-386.js"></script>
-        <script src="assets/js/bootstrap-transition.js"></script>
-        <script src="assets/js/bootstrap-alert.js"></script>
-        <script src="assets/js/bootstrap-modal.js"></script>
-        <script src="assets/js/bootstrap-dropdown.js"></script>
-        <script src="assets/js/bootstrap-scrollspy.js"></script>
-        <script src="assets/js/bootstrap-tab.js"></script>
-        <script src="assets/js/bootstrap-tooltip.js"></script>
-        <script src="assets/js/bootstrap-popover.js"></script>
-        <script src="assets/js/bootstrap-button.js"></script>
-        <script src="assets/js/bootstrap-collapse.js"></script>
-        <script src="assets/js/bootstrap-carousel.js"></script>
-        <script src="assets/js/bootstrap-typeahead.js"></script>
-        <script src="assets/js/bootstrap-affix.js"></script>
+      <section class="container p-t-lg p-b-lg text-center" id="contact">
+          <a id="contact-link"></a>
+          <div class="row">
+            <h3 class="section-title dark" data-hover="contact">Contact</h3>
+            <div id="social-links" class="m-t-sm m-b-sm">
+              <a target="_blank" href="http://linkedin.com/in/aravindbuddha"><span class="symbol fa fa-linkedin-square" title="LinkedIn"></span></a>
+              <a target="_blank" href="http://github.com/dimpu"><span class="fa fa-github-square" title="Github"></span></a>
+              <a target="_blank" href="http://twitter.com/dimpu"><span class="fa fa-twitter-square" title="Twitter"></span></a>
+            </div>
+            <div class="logo-container m-t-sm box-md block-center">
+              <div class="logo round box-md bg-lighter text-center text-center-v">
+                DA
+              </div>
+            </div>
+            <div class="conclusion m-t-sm" data-hover="dimpu.github.io">
+              dimpu.github.io
+            </div>
+          </div>
+        </section>
 
-        <script src="assets/js/holder/holder.js"></script>
-        <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-        <script src="assets/js/application.js"></script>
-
-      </body>
-    </html>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- Your own javascript -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

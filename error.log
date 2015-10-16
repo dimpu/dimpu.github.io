@@ -1,0 +1,3 @@
+[Fri Oct 16 08:24:02 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/img, referer: http://dimpu.github.local/
+[Fri Oct 16 08:24:02 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/js/main.js, referer: http://dimpu.github.local/
+[Fri Oct 16 08:24:16 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local/
