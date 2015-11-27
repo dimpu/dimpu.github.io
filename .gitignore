@@ -3,6 +3,8 @@
 *.ko
 *.obj
 *.elf
+blog
+blog2
 
 # Precompiled Headers
 *.gch

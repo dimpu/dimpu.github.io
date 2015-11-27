@@ -216,9 +216,11 @@ body{
    right: 20px;
 }
 
+#project-list li figure>div{
+  background: #663399;
+}
 #skills {
     color: #fff;
-    background: rgb(55, 90, 127);
 }
 
 #skills .skill-main-list {
@@ -254,4 +256,7 @@ body{
 .conclusion{
   font-size: 2rem;
   font-family: 'Pacifico', cursive;
+}
+#contact{
+  background: #c0392b;
 }
