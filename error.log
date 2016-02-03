@@ -1,8 +1,0 @@
-[Fri Oct 16 08:24:02 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/img, referer: http://dimpu.github.local/
-[Fri Oct 16 08:24:02 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/js/main.js, referer: http://dimpu.github.local/
-[Fri Oct 16 08:24:16 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local/
-[Sun Oct 18 21:03:29 2015] [error] [client 192.168.10.1] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local/
-[Sat Nov 07 20:29:58 2015] [error] [client 10.0.2.2] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local:8080/
-[Wed Nov 11 06:51:33 2015] [error] [client 10.0.2.2] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local/
-[Wed Nov 11 18:38:51 2015] [error] [client 10.0.2.2] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local/
-[Fri Nov 27 08:31:44 2015] [error] [client 10.0.2.2] File does not exist: /var/www/html/learn/github/dimpu.github.io/favicon.ico, referer: http://dimpu.github.local/

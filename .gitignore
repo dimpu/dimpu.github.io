@@ -1,31 +1,9 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-blog
-blog2
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+error.log
+access.log
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+node_modules
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.swp
+
